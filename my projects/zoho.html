@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoho Styles - Fashion for Everyone</title>
+    <style>
+        body {
+            font-family: Algerian, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .products {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            flex: 1 1 calc(33% - 40px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #D5674D;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zoho Styles for Dresses</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dresses">Dresses</a></li>
+            <li><a href="#new-arrivals">New Arrivals</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="carousel">
+        <div class="carousel-slide active">
+            <img src="https://i.pinimg.com/236x/03/6a/67/036a6780b3caf2c11ec3fea53a371e24.jpg?fasion, dress1"alt="Fashion 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="https://i.pinimg.com/236x/09/f3/34/09f334fed7d1da636e8ef008793cc99f.jpg?fasion ,dress2" alt="Fashion 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="https://i.pinimg.com/236x/fc/00/26/fc002692cf13387f5bb2b8dd3f95f687.jpg?fashion,dress3" alt="Fashion 3">
+        </div>
+    </section>
+    <main>
+        <section id="dresses" class="products">
+            <h2>Featured Dresses</h2>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/236x/12/a9/bc/12a9bc8c0a01290a9a63dbd07f873141.jpg?dress1" alt="Dress 1">
+                <h3>Elegant Red Dress</h3>
+                <p>$99.99</p>
+                <button onclick="addToCart('Elegant Red Dress', 99.99)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/236x/8c/fe/6b/8cfe6b25fc3e60ef6cc13620456b4ba8.jpg?dress2" alt="Dress 2">
+                <h3>Chic Black Dress</h3>
+                <p>$89.99</p>
+                <button onclick="addToCart('Chic Black Dress', 89.99)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/236x/8a/b4/5c/8ab45c473abfb29a9a42248d1d810c06.jpg?dress3" alt="Dress 3">
+                <h3>Summer Floral Dress</h3>
+                <p>$79.99</p>
+                <button onclick="addToCart('Summer Floral Dress', 79.99)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/236x/37/43/c3/3743c30d4243537737d85fcd474776bb.jpg?dress4" alt="Dress 4">
+                <h3>Casual Blue Dress</h3>
+                <p>$69.99</p>
+                <button onclick="addToCart('Casual Blue Dress', 69.99)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/236x/1d/e6/0f/1de60f0623fca677b20cef215d611d42.jpg?dress5" alt="Dress 5">
+                <h3>Classic White Dress</h3>
+                <p>$89.99</p>
+                <button onclick="addToCart('Classic White Dress', 89.99)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="new-arrivals" class="products">
+            <h2>New Arrivals</h2>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/236x/55/0c/5c/550c5cbbd00a35349a597065acb8ace4.jpg?dress6" alt="Dress 6">
+                <h3>Trendy Yellow Dress</h3>
+                <p>$79.99</p>
+                <button onclick="addToCart('Trendy Yellow Dress', 79.99)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/236x/92/08/28/920828f08a63f51fed7c09bde310c041.jpg?dress7" alt="Dress 7">
+                <h3>Stylish Green Dress</h3>
+                <p>$89.99</p>
+                <button onclick="addToCart('Stylish Green Dress', 89.99)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/236x/fa/6d/1a/fa6d1a7c6d26ae29e77413ba38c362f3.jpg?dress8" alt="Dress 8">
+                <h3>Elegant Evening Dress</h3>
+                <p>$99.99</p>
+                <button onclick="addToCart('Elegant Evening Dress', 99.99)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/236x/ad/3a/13/ad3a13ed218a1e09db57f59f87f3abf3.jpg?dress9" alt="Dress 9">
+                <h3>Modern Grey Dress</h3>
+                <p>$89.99</p>
+                <button onclick="addToCart('Modern Grey Dress', 89.99)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/236x/c1/e3/db/c1e3db9a1aa2e25f5db007c625e30dca.jpg?dress10" alt="Dress 10">
+                <h3>Casual Pink Dress</h3>
+                <p>$69.99</p>
+                <button onclick="addToCart('Casual Pink Dress', 69.99)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zoho Styles. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add to cart functionality
+        const cart = [];
+
+        function addToCart(dressName, dressPrice) {
+            const existingItem = cart.find(item => item.name === dressName);
+
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push({ name: dressName, price: parseFloat(dressPrice), quantity: 1 });
+            }
+
+            console.log(cart);
+            alert(`${dressName} has been added to your cart.`);
+        }
+
+        // Carousel functionality
+        let currentSlide = 0;
+       
